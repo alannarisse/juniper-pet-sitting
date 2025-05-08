@@ -53,7 +53,7 @@ nav a:hover {
 section {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  height:100vh;
+  min-height:100vh;
   width:100vw;
   overflow:hidden;
 }
@@ -105,6 +105,7 @@ p {
   border:1px solid black;
 }
 img {
+  width:100%;
   border-radius:16px;
   border:14px solid white;
 }
@@ -117,7 +118,15 @@ img {
 #rates tr:nth-child(odd){
   background: #fff;
 }
-
+@media screen and (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+    overflow:visible;
+  }
+  #about img {
+    position:static;
+  }
+}
 
     </style>
   </head>
