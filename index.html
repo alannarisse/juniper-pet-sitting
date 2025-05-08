@@ -1,0 +1,178 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juniper's Pet Sitting in North and Northeast Portland Oregon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+* {box-sizing:border-box;}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:20px;
+  margin:0;
+}
+h1, h2, h3, h4 {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 48px;
+}
+nav {
+  display:flex;
+  width:100vw;
+  justify-content: right;
+  padding:30px;
+  gap:40px;
+  padding-right:60px;
+  background: #4E3337;
+}
+footer {
+  background: #4E3337;
+  width:100vw;
+  padding:30px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom: 4px solid #4E3337;
+}
+nav a:hover {
+  border-bottom: 4px solid #fff;
+}
+section {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  height:100vh;
+  width:100vw;
+  overflow:hidden;
+}
+section article {
+  padding:60px;
+}
+#home .left {
+  background:#D1A8AF
+}
+#about .right {
+  background: #EDD9DC;
+}
+#about .left {
+  position:relative;
+}
+#about img {
+  position: absolute;
+}
+img::after {
+  border-radius:16px;
+  border:14px solid white;
+}
+#about .img1 {
+  top:60px; left:60px;
+}
+#about .img2 {
+  top:80px; left:310px;
+}
+#about .img3 {
+  top:260px; left:40px;
+}
+#about .img4 {
+  top:280px; left:300px;
+}
+#about .img5 {
+  top:470px; left:120px;
+}
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+p {
+  margin-bottom:80px;
+  line-height:1.8em;
+}
+#rates {
+  width: 80%;
+  border:1px solid black;
+}
+img {
+  border-radius:16px;
+  border:14px solid white;
+}
+#rates td {
+  padding:10px;
+}
+#rates tr:nth-child(even){
+  background: #eeebeb;
+}
+#rates tr:nth-child(odd){
+  background: #fff;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+    <nav>
+      <a href="">services</a> <a href="">about</a> <a href="">email</a>
+    </nav>
+    <section id="home">
+      <article class="left">
+        <h1>Hello! I’m Juniper</h1>
+        <img src="http://placebear.com/400/500">
+      </article>
+      <article class="right">
+        <h2>Available for Pet Sitting and Pet Care</h2>
+        <p>I’m a pet sitter in North Portland near PCC Cascade. I have experience watching dogs and cats, and I love all pets. I am available for in-home pet sitting and dog walking. I was a Girl Scout for 7 years. </p>
+
+        <h2>About Me</h2>
+        <p>I'll be a High School sophomore in fall 2025. I’m responsible and reliable. I've helped my mom with Rover pet sitting as well as my own pet sitting for neighbors. I have two dogs at home that need special care. One is very nervous and the other is reactive to other dogs. </p>
+
+      <p><a href="">Check out my resume here</a></p>
+      </article>
+    </section>
+    <section id="about">
+      <article class="left">
+        <img class="img1" src="http://placebear.com/300/200">
+        <img class="img2" src="http://placebear.com/301/200">
+        <img class="img3" src="http://placebear.com/300/200">
+        <img class="img4" src="http://placebear.com/302/200">
+        <img class="img5" src="http://placebear.com/400/300">
+      </article>
+      <article class="right">
+        <h2>Services I provide</h2>
+      <table id="rates">
+        <tr>
+          <td>Overnight Dog and Cat sitting</td>
+          <td>$75, $10 per additional pet</td>
+        </tr>
+        <tr>
+          <td>Small pet care and feeding (birds, rodents, lizards, etc.), Dog walking
+          </td>
+          <td>$16 per hour</td>
+        </tr>
+      </table>
+
+
+      <h2>Leave it to me</h2>
+      <p>Don't leave your pet at a kennel or boarding place when they can have personal attention in their home. </p>
+
+
+      </article>
+  </section>
+<footer>
+  &nbsp;
+</footer>
+    </main> 
+  </body>
+  </html>
