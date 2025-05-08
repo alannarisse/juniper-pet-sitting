@@ -7,11 +7,22 @@
   <meta name="description" content="Pet sitting in Portland Oregon">
   <meta name="keywords" content="pet sitting, juniper, cat sitting, dog sitting, dog walking, north portland, northeast portland.">
   <meta name="author" content="Juniper">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <style>
 * {box-sizing:border-box;}
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -30,7 +41,9 @@ h1 {
 }
 h2 {
   font-size: 48px;
+  margin-bottom:20px;
 }
+
 nav {
   display:flex;
   width:100vw;
@@ -44,6 +57,22 @@ footer {
   background: #4E3337;
   width:100vw;
   padding:30px;
+}
+a.button {
+  font-family: "Cal Sans", sans-serif;
+  background:#4E3337;
+  border-radius:16px;
+  color:#fff;
+  border:4px solid #4E3337;
+  display:inline-block;
+  padding:8px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom:60px;
+}
+a.button:hover {
+  color:#4E3337;
+  background:#fff;
 }
 nav a {
   color: white;
@@ -65,7 +94,7 @@ section article {
   padding:60px;
 }
 #home .left {
-  background:#D1A8AF
+  background:#D1A8AF;
 }
 #about .right {
   background: #EDD9DC;
@@ -100,8 +129,14 @@ img::after {
   font-weight: 300;
   font-style: normal;
 }
+a {
+  color: #4E3337;
+}
+a:hover {
+  color: #b78d94;
+}
 p {
-  margin-bottom:80px;
+  margin-bottom:40px;
   line-height:1.8em;
 }
 #rates {
@@ -125,6 +160,14 @@ img {
 #rates tr:nth-child(odd){
   background: #fff;
 }
+footer {
+  display:flex;
+  justify-content: flex-end;
+}
+footer img {
+  width:80px;
+  border:none;
+}
 @media screen and (max-width: 768px) {
   section {
     grid-template-columns: 1fr;
@@ -133,6 +176,9 @@ img {
   #about img {
     position:static;
   }
+  section article {
+  padding:30px;
+}
 }
 
     </style>
@@ -140,7 +186,7 @@ img {
   <body>
     <main>
     <nav>
-      <a href="">services</a> <a href="">about</a> <a href="">email</a>
+      <a href="#about">about</a> <a href="mailto:juniperrisse@gmail.com?subject=pet sitting request">email me</a>
     </nav>
     <section id="home">
       <article class="left">
@@ -148,13 +194,14 @@ img {
         <img src="http://placebear.com/400/500">
       </article>
       <article class="right">
-        <h2>Available for Pet Sitting and Pet Care</h2>
+        <h2>Available for Portland Pet Sitting and Pet Care in Summer 2025</h2>
         <p>I’m a pet sitter in North Portland near PCC Cascade. I have experience watching dogs and cats, and I love all pets. I am available for in-home pet sitting and dog walking. I was a Girl Scout for 7 years. </p>
+        <p><a class="button" href="mailto:juniperrisse@gmail.com?subject=pet sitting request">Email me</a></p>
 
-        <h2>About Me</h2>
-        <p>I'll be a High School sophomore in fall 2025. I’m responsible and reliable. I've helped my mom with Rover pet sitting as well as my own pet sitting for neighbors. I have two dogs at home that need special care. One is very nervous and the other is reactive to other dogs. </p>
+        <h2>More About Me</h2>
+        <p>I'll be a High School sophomore in fall 2025. I'm responsible and reliable. I've helped my mom with Rover pet sitting as well as my own pet sitting for neighbors. I have two dogs at home that need special care. One is very nervous and the other is reactive to other dogs. </p>
 
-      <p><a href="">Check out my resume here</a></p>
+      <p><a href="">View my resume here</a></p>
       </article>
     </section>
     <section id="about">
@@ -173,7 +220,7 @@ img {
           <td>$75, $10 per additional pet</td>
         </tr>
         <tr>
-          <td>Small pet care and feeding (birds, rodents, lizards, etc.), Dog walking
+          <td> Dog walking, cat care, feeding and affection, small pet care and feeding (birds, rodents, lizards, etc.)
           </td>
           <td>$16 per hour</td>
         </tr>
@@ -181,13 +228,13 @@ img {
 
 
       <h2>Leave it to me</h2>
-      <p>Don't leave your pet at a kennel or boarding place when they can have personal attention in their own home. </p>
+      <p>Don't leave your pet at a kennel or boarding place when they can have personal attention in their own home.</p>
 
 
       </article>
   </section>
 <footer>
-  &nbsp;
+  <img src="images/noun-cat-and-dog-3381925-FFFFFF.svg">
 </footer>
     </main> 
   </body>
